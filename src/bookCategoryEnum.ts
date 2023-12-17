@@ -7,10 +7,10 @@
  * BookCategory.Poetry 代表詩歌類別
  * BookCategory.Biography 代表傳記類別
  */
-export enum BookCategory {
+enum BookCategory {
     Novel = 'Novel',
-    Science = 'Science',
-    Education = 'Education'
+    Poetry = 'Poetry',
+    Biography = 'Biography'
 }
 
 /**
@@ -23,6 +23,15 @@ export enum BookCategory {
  * 輸出: 'Book category: Novel'
  */
 
-export function getBookCategory(category) {
-  // 在此實現函式
+export function getBookCategory(category: BookCategory): string {
+  switch (category) {
+      case BookCategory.Novel:
+          return 'Book category: 小說';
+      case BookCategory.Poetry:
+          return 'Book category: 詩歌';
+      case BookCategory.Biography:
+          return 'Book category: 傳記';
+      default:
+          return 'Book category not found';
+  }
 }
