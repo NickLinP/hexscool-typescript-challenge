@@ -9,5 +9,13 @@
  * @returns - 回傳只包含偶數的數字陣列
  */
 export function filterEvens(numbers: number[]): number[] {
-    // 請在此處寫下你的程式碼
+  // 請在此處寫下你的程式碼
+  let buffer = [] as number[];
+  numbers.forEach((num: number) => {
+    if (num % 2 === 0) {
+      buffer.push(num);
+    }
+  });
+
+  return buffer;
 }

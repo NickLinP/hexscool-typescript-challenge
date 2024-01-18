@@ -26,11 +26,11 @@ enum BookCategory {
 export function getBookCategory(category: BookCategory): string {
   switch (category) {
       case BookCategory.Novel:
-          return 'Book category: 小說';
+          return 'Book category: Novel';
       case BookCategory.Poetry:
-          return 'Book category: 詩歌';
+          return 'Book category: Poetry';
       case BookCategory.Biography:
-          return 'Book category: 傳記';
+          return 'Book category: Biography';
       default:
           return 'Book category not found';
   }
