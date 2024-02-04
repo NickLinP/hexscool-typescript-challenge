@@ -14,8 +14,10 @@
  */
 export function arraySum(numbers: number[]): number {
     let result = 0;
-    numbers.forEach((item:number)=>{
-        result = result + item;
-    })
+    if (numbers.length > 0) {
+        numbers.forEach((item: number) => {
+            result = result + item;
+        })
+    }
     return result;
 }

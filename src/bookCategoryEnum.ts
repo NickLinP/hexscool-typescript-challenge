@@ -7,7 +7,7 @@
  * BookCategory.Poetry 代表詩歌類別
  * BookCategory.Biography 代表傳記類別
  */
-enum BookCategory {
+export enum BookCategory {
     Novel = 'Novel',
     Poetry = 'Poetry',
     Biography = 'Biography'
