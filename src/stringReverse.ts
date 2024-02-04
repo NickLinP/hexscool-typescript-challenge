@@ -7,4 +7,9 @@
  */
 export function reverseString(str: string): string {
     // 在此實現函式
+    let buffer :Array<string> = [];
+    for(let i =0;i<str.length;i++){
+        buffer.push(str[i]);
+    } 
+    return buffer.reverse().join("");
 }

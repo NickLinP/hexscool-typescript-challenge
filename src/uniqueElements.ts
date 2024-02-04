@@ -6,4 +6,6 @@
  */
 export function uniqueElements(array: number[]): number[] {
     // 請在此處寫下你的程式碼
+    let buffer :number[] = [...new Set(array)];
+    return buffer;
 }

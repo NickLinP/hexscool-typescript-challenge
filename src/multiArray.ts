@@ -8,6 +8,8 @@
  * 輸出: [[2, 4], [6, 8], [10, 12]]
  */
 
-export function processMultiArray(arr) {
+export function processMultiArray(arr: Array<number>[]):Array<number>[] {
     // 在此實現函式
+    const result = arr.map((item: Array<number>) => item.map(num => num * 2));
+    return result;
 }

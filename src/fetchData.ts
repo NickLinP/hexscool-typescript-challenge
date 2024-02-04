@@ -4,6 +4,20 @@
  * @param url - 要取得資料的 URL
  * @returns - 回傳一個 Promise，該 Promise resolve 的值應該是從 URL 取得的資料
  */
-
+type fetchDataType = {
+    userId: number,
+    id: number,
+    title: string,
+    completed: boolean
+}
 // 請在下方寫下你的程式碼
-
+export function fetchData(url: string): Promise<fetchDataType> {
+    return new Promise((resolve, reject) => { 
+        fetch(url)
+            .then(res => {
+                return res.json(); 
+            })
+            .then(data => resolve(data))
+            .catch(error => reject(error));
+    });
+}
