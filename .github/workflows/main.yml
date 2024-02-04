@@ -1,7 +1,7 @@
 name: TypeScript Test
 on:
   push:
-    branches: ["main"]
+    branches: ["finalTask"]
 
 jobs:
   build:
