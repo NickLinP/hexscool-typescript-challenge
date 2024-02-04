@@ -36,7 +36,7 @@ export function multiply(a: number, b: number): number {
 export function divide(a: number, b: number): number | string {
   // 在此實現函式
   if (a === 0 || b === 0) {
-    return "Cannot divide by zero";
+    throw "Cannot divide by zero";
   } else {
     return a / b;
   }

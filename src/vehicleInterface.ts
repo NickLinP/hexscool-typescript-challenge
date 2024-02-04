@@ -18,5 +18,5 @@ type Vehicle = {
 }
 export function vehicleInfo(vehicle: Vehicle/* 你的車輛介面 */): string {
     // 在此實現函式
-    return `${vehicle.brand} ${vehicle.model} ${vehicle.year}`
+    return `${vehicle.brand} ${vehicle.model} (${vehicle.year})`
 }
